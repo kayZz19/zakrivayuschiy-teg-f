@@ -14,46 +14,40 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--basic-fonts), monospace;
-  font-size: 18px;
   font-variation-settings: "wght" 400;
   background-image: var(--bg-image);
   background-attachment: fixed;
   background-size: cover;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 .header {
-  margin: 101px auto;
-  max-width: 696px;
+  margin: 100px 0;
 }
 
 .header_box {
   border: 2px solid;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 323px;
-  padding: 120px 0;
+  padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem) clamp(0.875rem, -1.4687rem + 9.9996vw, 7.531rem);
   gap: 20px;
   background-color: #fff;
 }
 
 .header_title {
   font-family: "PressStart2P", monospace;
-  font-weight: 400;
-  font-size: clamp(3.06rem, 2.7079rem + 1.6901vw, 4.06rem);
-  line-height: 49px;
+  font-size: clamp(3.063rem, 2.7109rem + 1.5023vw, 4.063rem);
   color: #000;
   text-transform: uppercase;
 }
 
 .header_text {
   font-family: var(--decorate-fonts), monospace;
-  font-weight: 400;
-  font-size: clamp(0.778rem, 0.6019rem + 0.8451vw, 1.278rem);
-  line-height: 14px;
-  letter-spacing: 5px;
+  font-size: clamp(0.875rem, 0.6771rem + 0.8443vw, 1.437rem);
   color: #000;
   text-transform: uppercase;
 }
@@ -62,8 +56,6 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  max-width: 696px;
-  margin: 0 auto;
 }
 
 .card {
@@ -72,7 +64,6 @@
 
 .card_title {
   font-size: 18px;
-  line-height: 21.78px;
   padding: 4px 10px;
   font-variation-settings: "wght" 700;
   background-color: #fff;
@@ -81,13 +72,14 @@
 .card_img {
   object-fit: cover;
   width: 100%;
+  max-height: 696px;
   display: block;
 }
 
 .label_card {
   position: absolute;
   text-transform: uppercase;
-  font-family: var(--decorate-fonts);
+  font-family: var(--decorate-fonts), monospace;
   font-size: 14px;
   right: 11px;
   top: 24px;
@@ -116,6 +108,7 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
+  font-size: 18px;
 }
 
 .card__like-button {
@@ -126,7 +119,7 @@
 
 .button__text {
   font-size: 14px;
-  font-family: var(--decorate-fonts);
+  font-family: var(--decorate-fonts), monospace;
   position: relative;
   z-index: 1;
   color: #000;
@@ -136,17 +129,20 @@
 .card__icon-button {
   background-color: transparent;
   border: none;
-  padding-right: 12px;
+  width: 38px;
+  padding: 0;
 }
 
 .card_buttons {
   display: flex;
   justify-content: end;
-  padding-top: 27px;
+  padding-top: 25px;
+  gap: 6px;
 }
 
 .like-icon {
   padding-top: 2px;
+  width: 36px;
 }
 
 .dialog_save {
@@ -184,7 +180,7 @@
 }
 
 .save_text {
-  font-family: "PressStart2P";
+  font-family: "PressStart2P", monospace;
   font-size: 14px;
   mix-blend-mode: difference;
   color: #fff;
@@ -192,7 +188,7 @@
 }
 
 .dialog_text {
-  font-family: "PressStart2P";
+  font-family: "PressStart2P", monospace;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
@@ -224,35 +220,35 @@
   opacity: 0;
 }
 
-.card1 {
+.card_grayscale {
   filter: grayscale(100%);
 }
 
-.card2 {
+.card_sepia {
   filter: sepia(80%);
 }
 
-.card3 {
+.card_invert{
   filter: invert(90%);
 }
 
-.card4 {
+.card_blur {
   filter: blur(2px);
 }
 
-.card5 {
+.card_brightness {
   filter: brightness(1.5);
 }
 
-.card6 {
+.card_contrast {
   filter: contrast(200%);
 }
 
-.card7 {
+.card_rotate {
   filter: hue-rotate(90deg);
 }
 
-.card8 {
+.card_mix {
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)) contrast(150%)
     brightness(1.2);
 }
@@ -355,13 +351,6 @@
 }
 
 @media (min-width: 694px) {
-  .header_box {
-    padding: 135px 0;
-    gap: 32px;
-  }
-  .header_text {
-    letter-spacing: 3px;
-  }
   .card_content {
     padding: 27px 25px 25px;
   }

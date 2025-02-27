@@ -351,9 +351,6 @@
 }
 
 @media (min-width: 694px) {
-  .card_content {
-    padding: 27px 25px 25px;
-  }
   .button_save {
     flex-direction: row;
     justify-content: center;
@@ -369,5 +366,12 @@
   }
   .dialog_button {
     padding: 5px;
+  }
+  .desk_label{
+    text-transform: lowercase;
+  }
+  .label_card{
+    top: 28px;
+    right: 25px;
   }
 }

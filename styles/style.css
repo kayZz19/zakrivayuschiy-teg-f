@@ -147,7 +147,7 @@
 }
 
 .dialog_save {
-  padding: 30px 37px;
+  padding: 30px 47px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -171,7 +171,20 @@
   align-items: center;
   gap: 8px;
   width: 100%;
-  padding: 15px 0px;
+  padding: 7px 0px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.dialog_button_save {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 0px;
   background-color: #fff;
   position: relative;
   overflow: hidden;

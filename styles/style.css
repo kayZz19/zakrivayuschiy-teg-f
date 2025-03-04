@@ -395,7 +395,11 @@
     top: 28px;
     right: 25px;
   }
-  .dialog_save{
+  .dialog_save {
     padding: 30px;
+  }
+  .dialog_button_save {
+    flex-direction: row;
+    padding: 16px 21px 15px 22px;
   }
 }

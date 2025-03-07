@@ -13,10 +13,34 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.png" />
   </head>
   <body class="page">
+    <div class="curtain" id="curtain">
+      <div class="text-line">С праздником,</div>
+      <div class="text-line">любимая,</div>
+      <div class="text-line">с 8 марта!!!</div>
+      <div class="heart_for_u" id="heart_for_u">❤️</div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+          document.getElementById("heart_for_u").classList.add("show");
+        }, 500);
+      });
+
+      document
+        .getElementById("heart_for_u")
+        .addEventListener("click", function () {
+          let curtain = document.getElementById("curtain");
+          curtain.classList.add("hidden");
+          setTimeout(() => {
+            curtain.style.display = "none";
+            document.getElementById("content").style.display = "block";
+          }, 800);
+        });
+    </script>
     <header class="header">
       <div class="header_box">
-        <h1 class="header_title">&lt;/html&gt;</h1>
-        <h2 class="header_text">закрывающий тег</h2>
+        <h1 class="header_title">For you</h1>
+        <h2 class="header_text">самой восхитетельной на свете</h2>
       </div>
     </header>
     <main class="main">
@@ -25,12 +49,7 @@
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
         <div class="card_img_section">
-          <img
-            src="images/image.png"
-            alt="машина"
-            class="card_img card_grayscale"
-          />
-          <p for="" class="label_card">&lt;/html&gt;</p>
+          <img src="images/she1.jpg" alt="машина" class="card_img" />
         </div>
         <div class="card_content">
           <div class="card_text">
@@ -51,7 +70,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_0_1575)" class="heart">
+                <g class="heart">
                   <path
                     class="main-body"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -75,11 +94,9 @@
                     fill="#FF0000"
                   />
                 </g>
-                <defs>
-                  <clipPath id="clip0_0_1575">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
+                <clipPath id="clip0_0_1575">
+                  <rect width="39" height="36" fill="white" />
+                </clipPath>
               </svg>
             </button>
             <button class="card__like-button button" type="button">
@@ -91,12 +108,7 @@
       <section class="card">
         <h2 class="card_title">1 спринт: Я — чистый лист</h2>
         <div class="card_img_section">
-          <img
-            src="images/image.png"
-            alt="машина"
-            class="card_img card_sepia"
-          />
-          <p for="" class="label_card">&lt;/html&gt;</p>
+          <img src="images/support.png" alt="машина" class="card_img" />
         </div>
         <div class="card_content">
           <div class="card_text">
@@ -119,7 +131,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_0_1575)" class="heart">
+                <g class="heart">
                   <path
                     class="main-body"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -143,11 +155,9 @@
                     fill="#FF0000"
                   />
                 </g>
-                <defs>
-                  <clipPath id="clip0_0_1575">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
+                <clipPath id="clip0_0_1576">
+                  <rect width="39" height="36" fill="white" />
+                </clipPath>
               </svg>
             </button>
             <button class="card__like-button button" type="button">
@@ -159,12 +169,7 @@
       <section class="card">
         <h2 class="card_title">1 спринт: А если не получится?</h2>
         <div class="card_img_section">
-          <img
-            src="images/image.png"
-            alt="машина"
-            class="card_img card_invert"
-          />
-          <p for="" class="label_card">&lt;css&gt;</p>
+          <img src="images/firstrace.jpg" alt="машина" class="card_img" />
         </div>
         <div class="card_content">
           <div class="card_text">
@@ -185,7 +190,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_0_1575)" class="heart">
+                <g class="heart">
                   <path
                     class="main-body"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -209,11 +214,9 @@
                     fill="#FF0000"
                   />
                 </g>
-                <defs>
-                  <clipPath id="clip0_0_1575">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
+                <clipPath id="clip0_0_1577">
+                  <rect width="39" height="36" fill="white" />
+                </clipPath>
               </svg>
             </button>
             <button class="card__like-button button" type="button">
@@ -225,8 +228,7 @@
       <section class="card">
         <h2 class="card_title">2 спринт: Погоня за идеалом</h2>
         <div class="card_img_section">
-          <img src="images/image.png" alt="машина" class="card_img card_blur" />
-          <p for="" class="label_card desk_label">&lt;desigions&gt;</p>
+          <img src="images/kiss.jpg" alt="машина" class="card_img card_blur" />
         </div>
         <div class="card_content">
           <div class="card_text">
@@ -249,7 +251,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_0_1575)" class="heart">
+                <g class="heart">
                   <path
                     class="main-body"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -273,11 +275,9 @@
                     fill="#FF0000"
                   />
                 </g>
-                <defs>
-                  <clipPath id="clip0_0_1575">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
+                <clipPath id="clip0_0_1578">
+                  <rect width="39" height="36" fill="white" />
+                </clipPath>
               </svg>
             </button>
             <button class="card__like-button button" type="button">
@@ -290,11 +290,10 @@
         <h2 class="card_title">2 спринт: О тех, кто рядом</h2>
         <div class="card_img_section">
           <img
-            src="images/image.png"
+            src="images/firstfilm.jpg"
             alt="машина"
             class="card_img card_brightness"
           />
-          <p for="" class="label_card desk_label">care</p>
         </div>
         <div class="card_content">
           <div class="card_text">
@@ -318,7 +317,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_0_1575)" class="heart">
+                <g class="heart">
                   <path
                     class="main-body"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -342,11 +341,9 @@
                     fill="#FF0000"
                   />
                 </g>
-                <defs>
-                  <clipPath id="clip0_0_1575">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
+                <clipPath id="clip0_0_1579">
+                  <rect width="39" height="36" fill="white" />
+                </clipPath>
               </svg>
             </button>
             <button class="card__like-button button" type="button">
@@ -358,12 +355,7 @@
       <section class="card">
         <h2 class="card_title">3 спринт: Обходные стратегии</h2>
         <div class="card_img_section">
-          <img
-            src="images/image.png"
-            alt="машина"
-            class="card_img card_contrast"
-          />
-          <p for="" class="label_card desk_label">&lt;support&gt;</p>
+          <img src="images/firstice.jpg" alt="машина" class="card_img" />
         </div>
         <div class="card_content">
           <div class="card_text">
@@ -384,7 +376,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_0_1575)" class="heart">
+                <g class="heart">
                   <path
                     class="main-body"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -408,11 +400,9 @@
                     fill="#FF0000"
                   />
                 </g>
-                <defs>
-                  <clipPath id="clip0_0_1575">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
+                <clipPath id="clip0_0_1580">
+                  <rect width="39" height="36" fill="white" />
+                </clipPath>
               </svg>
             </button>
             <button class="card__like-button button" type="button">
@@ -424,13 +414,7 @@
       <section class="card">
         <h2 class="card_title">3 спринт: Когда опускаются руки</h2>
         <div class="card_img_section">
-          <img
-            src="images/image.png"
-            alt="машина"
-            class="card_img card_rotate"
-          />
-          <p for="" class="label_card desk_label"
-            >&lt;lifes-style: none;&gt;</p>
+          <img src="images/april.jpg" alt="машина" class="card_img" />
         </div>
         <div class="card_content">
           <div class="card_text">
@@ -453,7 +437,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_0_1575)" class="heart">
+                <g class="heart">
                   <path
                     class="main-body"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -477,11 +461,9 @@
                     fill="#FF0000"
                   />
                 </g>
-                <defs>
-                  <clipPath id="clip0_0_1575">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
+                <clipPath id="clip0_0_1581">
+                  <rect width="39" height="36" fill="white" />
+                </clipPath>
               </svg>
             </button>
             <button class="card__like-button button" type="button">
@@ -493,8 +475,7 @@
       <section class="card">
         <h2 class="card_title">«Сейчас я здесь»</h2>
         <div class="card_img_section">
-          <img src="images/image.png" alt="машина" class="card_img card_mix" />
-          <p for="" class="label_card desk_label">&lt;experience&gt;</p>
+          <img src="images/she.jpg" alt="машина" class="card_img" />
         </div>
         <div class="card_content">
           <div class="card_text">
@@ -521,7 +502,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_0_1575)" class="heart">
+                <g class="heart">
                   <path
                     class="main-body"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -545,11 +526,9 @@
                     fill="#FF0000"
                   />
                 </g>
-                <defs>
-                  <clipPath id="clip0_0_1575">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
+                <clipPath id="clip0_0_1582">
+                  <rect width="39" height="36" fill="white" />
+                </clipPath>
               </svg>
             </button>
             <button class="card__like-button" type="button">
@@ -560,9 +539,9 @@
       </section>
       <section class="save">
         <button
-          class="button_save button"
-          onclick="window['menu-dialog'].showModal()"
+          class="dialog_button_save button"
           type="button"
+          id="darkModeBtn"
         >
           <svg
             viewBox="0 0 29 28"
@@ -574,26 +553,25 @@
           </svg>
           <span class="save_text">Сохранить на память</span>
         </button>
-        <dialog id="menu-dialog" class="dialog_save">
-          <div class="div_save">
-            <svg
-              viewBox="0 0 29 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="dialog_svg"
-            >
-              <use href="./svg/floppy.svg#desketWhite"></use>
-            </svg>
-            <p class="dialog_text">Вставьте дискету, чтобы продолжить</p>
-          </div>
-          <button
-            onclick="window['menu-dialog'].close()"
-            class="button_save dialog_button button"
-            type="button"
-          >
-            <span class="dialog_text">ок</span>
-          </button>
-        </dialog>
+        <div class="dark-overlay" id="darkOverlay">
+          <div class="big-heart" id="bigHeart">🤍</div>
+        </div>
+        <script>
+          document
+            .getElementById("darkModeBtn")
+            .addEventListener("click", function () {
+              let overlay = document.getElementById("darkOverlay");
+              let bigHeart = document.getElementById("bigHeart");
+              overlay.style.display = "flex";
+              setTimeout(() => {
+                bigHeart.classList.add("show");
+                setTimeout(() => {
+                  overlay.style.display = "none";
+                  bigHeart.classList.remove("show");
+                }, 2000);
+              }, 100);
+            });
+        </script>
       </section>
     </main>
     <script src="./scripts/like.js"></script>

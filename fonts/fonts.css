@@ -11,3 +11,9 @@
     font-weight: 400 700;
     font-style: normal;
 } 
+@font-face {
+    font-family: 'SF';
+    src: url('SF-Arabic.woff') format('woff2');
+    font-weight: 400 700;
+    font-style: normal;
+} 

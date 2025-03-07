@@ -44,6 +44,7 @@
   font-size: clamp(3.063rem, 2.7109rem + 1.5023vw, 4.063rem);
   color: #000;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .header_text {
@@ -51,6 +52,7 @@
   font-size: clamp(0.875rem, 0.6771rem + 0.8443vw, 1.437rem);
   color: #000;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .main {
@@ -124,7 +126,7 @@
   position: relative;
   z-index: 1;
   color: #000;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.5s linear;
 }
 
 .card__icon-button {
@@ -147,7 +149,7 @@
 }
 
 .dialog_save {
-  padding: 30px 37px;
+  padding: 30px 42px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -171,10 +173,25 @@
   align-items: center;
   gap: 8px;
   width: 100%;
-  padding: 15px 0px;
+  padding: 7px 0px;
   background-color: #fff;
   position: relative;
   overflow: hidden;
+  border: 2px solid #000;
+}
+
+.dialog_button_save {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 0px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  border: 2px #000 solid;
 }
 
 .div_save {
@@ -260,7 +277,7 @@
 
 .core {
   fill: transparent;
-  transition: fill 0.3s ease-in-out, fill 0.3s ease-in-out 0.03s;
+  transition: fill 0.3s ease-in-out;
 }
 
 .counter {
@@ -335,9 +352,10 @@
   height: 100%;
   background-color: #000;
   transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s linear;
   z-index: 0;
 }
+
 .button:hover::after {
   transform: translateX(0);
 }
@@ -353,6 +371,94 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px #000;
+}
+
+.curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  transition: height 1s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+  text-align: center;
+}
+.curtain.hidden {
+  height: 0;
+}
+.content {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+.heart_for_u {
+  font-size: 10rem;
+  color: red;
+  cursor: pointer;
+  transition: transform 0.3s;
+  opacity: 0;
+  margin-top: 20px;
+}
+.heart_for_U:hover {
+  transform: scale(1.2);
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.text-line {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+.text-line:nth-child(1) { animation-delay: 0s; }
+.text-line:nth-child(2) { animation-delay: 1s; }
+.text-line:nth-child(3) { animation-delay: 2s; }
+.heart_for_u.show {
+  animation: fadeIn 1s forwards 3s;
+}
+.title_love {
+  font-family: "SF";
+}
+.dark-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+.big-heart {
+  font-size: 5rem;
+  color: white;
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+.big-heart.show {
+  opacity: 1;
+  transform: scale(5);
+}
+.dark-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background: white;
+  color: black;
+  border-radius: 5px;
 }
 
 @media (min-width: 694px) {
@@ -378,5 +484,12 @@
   .label_card {
     top: 28px;
     right: 25px;
+  }
+  .dialog_save {
+    padding: 30px;
+  }
+  .dialog_button_save {
+    flex-direction: row;
+    padding: 16px 21px 15px 22px;
   }
 }
